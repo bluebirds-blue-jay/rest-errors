@@ -1,16 +1,15 @@
 {
-  "name": "@bluejay/rest-error",
-  "types": "rest-error.d.ts",
+  "name": "@bluejay/rest-errors",
   "scripts": {
     "test": "mocha --require ./test/setup.js ./test/**/*.test.js"
   },
   "license": "MIT",
   "version": "1.0.0",
   "main": "index.js",
-  "description": "Base RestError.",
+  "description": "Errors with status codes and more.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bluebirds-blue-jay/rest-error.git"
+    "url": "git+https://github.com/bluebirds-blue-jay/rest-errors.git"
   },
   "keywords": [
     "bluejay",
@@ -19,10 +18,11 @@
   ],
   "author": "Sylvain Estevez",
   "bugs": {
-    "url": "https://github.com/bluebirds-blue-jay/rest-error/issues"
+    "url": "https://github.com/bluebirds-blue-jay/rest-errors/issues"
   },
-  "homepage": "https://github.com/bluebirds-blue-jay/rest-error#readme",
+  "homepage": "https://github.com/bluebirds-blue-jay/rest-errors#readme",
   "dependencies": {
+    "@bluejay/status-code": "^1.0.3",
     "@types/node": "^7.0.29",
     "typescript": "^2.3.4"
   },

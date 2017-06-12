@@ -1,15 +1,16 @@
-import { RestError } from '../src';
+import { AbstractRestError } from '../src';
+import * as StatusCode from '@bluejay/status-code';
 
-describe('RestError', function () {
-  class ConcreteRestError extends RestError {
-    public readonly statusCode: number = 1;
+describe('AbstractRestError', function () {
+  class ConcreteRestError extends AbstractRestError {
+    public readonly statusCode = StatusCode.INTERNAL_SERVER_ERROR;
   }
 
   describe('constructor', function () {
     it('should apply default values', function () {
       const instance = new ConcreteRestError('foo');
       expect(instance.message).to.equal('foo');
-      expect(instance.statusCode).to.equal(1);
+      expect(instance.statusCode).to.equal(500);
       expect(instance.code).to.equal('ConcreteRestError');
       expect(instance.meta).to.deep.equal({});
     });
@@ -34,7 +35,7 @@ describe('RestError', function () {
       const instance = new ConcreteRestError('foo', { foo: 'bar' });
       expect(instance.getMeta()).to.deep.equal({ foo: 'bar' });
       expect(instance.getCode()).to.equal('ConcreteRestError');
-      expect(instance.getStatusCode()).to.equal(1);
+      expect(instance.getStatusCode()).to.equal(500);
     });
   });
 });
