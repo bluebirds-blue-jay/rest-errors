@@ -60,3 +60,7 @@ export function fromStatusCode(statusCode: StatusCode.TCode, message: string, me
 
   throw new Error(`${statusCode} is not a valid error code.`);
 }
+
+export function isRestError(err: any): err is AbstractRestError {
+  return err instanceof AbstractRestError;
+}

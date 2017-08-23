@@ -52,4 +52,14 @@ describe('RestErrors', function () {
       }).to.throw(/not a valid error code/);
     });
   });
+
+  describe('.isRestError()', function() {
+    it('should return true', function () {
+      expect(RestErrors.isRestError(new RestErrors.NotFound(''))).to.equal(true);
+    });
+
+    it('should return false', function () {
+      expect(RestErrors.isRestError(new Error(''))).to.equal(false);
+    });
+  });
 });
