@@ -16,7 +16,7 @@ Rest oriented set of errors.
 ```typescript
 import * as RestErrors from '@bluejay/rest-errors';
 
-new RestErrors.BadRequest('Something went wrong.', { some: { meta: 'data' } });
+new RestErrors.BadRequestRestError('Something went wrong.', { some: { meta: 'data' } });
 ```
 
 Using the named exports.
@@ -24,8 +24,10 @@ Using the named exports.
 ```typescript
 import { RestErrors } from '@bluejay/rest-errors';
 
-new RestErrors.BadRequest('Something went wrong.', { some: { meta: 'data' } });
+new RestErrors.BadRequestRestError('Something went wrong.', { some: { meta: 'data' } });
 ```
+
+Or directly.
 
 ```typescript
 import { BadRequestRestError } from '@bluejay/rest-errors';

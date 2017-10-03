@@ -1,10 +1,12 @@
 import { TStatusCode } from '@bluejay/status-code';
 import { TRestErrorCode } from '../types/rest-error-code';
+import { IRestError } from '../interfaces/rest-error';
+import { TRestErrorMeta } from '../types/rest-error-meta';
 
-export abstract class RestError extends Error {
+export abstract class RestError extends Error implements IRestError {
   public abstract readonly statusCode: TStatusCode;
   public readonly code: TRestErrorCode;
-  public readonly meta: object;
+  public readonly meta: TRestErrorMeta;
 
   public constructor(message: string, meta: object = {}, code?: TRestErrorCode) {
     super(message);
@@ -12,11 +14,11 @@ export abstract class RestError extends Error {
     this.code = code || this.code || this.constructor.name;
   }
 
-  public getStatusCode(): TStatusCode {
+  public getStatusCode() {
     return this.statusCode;
   }
 
-  public getMeta(): object {
+  public getMeta() {
     return this.meta;
   }
 
@@ -25,10 +27,10 @@ export abstract class RestError extends Error {
   }
 
   public getStack() {
-    return this.stack;
+    return this.stack as string;
   }
 
-  public getCode(): TRestErrorCode {
+  public getCode() {
     return this.code;
   }
 }
