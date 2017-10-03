@@ -1,7 +1,7 @@
 {
   "name": "@bluejay/rest-errors",
   "scripts": {
-    "test": "mocha --require ./test/setup.js ./test/**/*.test.js"
+    "test": "mocha --require ./node_modules/ts-node/register --require ./test/setup.js ./test/**/*.test.js"
   },
   "license": "MIT",
   "version": "1.1.0",
@@ -22,14 +22,16 @@
   },
   "homepage": "https://github.com/bluebirds-blue-jay/rest-errors#readme",
   "dependencies": {
-    "@bluejay/status-code": "^1.0.3",
+    "@bluejay/status-code": "^2.1.2",
+    "@bluejay/utils": "^1.5.1",
     "@types/node": "^7.0.29",
-    "typescript": "^2.3.4"
+    "typescript": "^2.5.3"
   },
   "devDependencies": {
     "@types/chai": "^4.0.0",
     "@types/mocha": "^2.2.41",
     "chai": "^4.0.2",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "ts-node": "^3.3.0"
   }
 }
