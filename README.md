@@ -34,3 +34,7 @@ import { BadRequestRestError } from '@bluejay/rest-errors';
 
 new BadRequestRestError('Something went wrong.', { some: { meta: 'data' } });
 ```
+
+## Documentation
+
+See [Github Pages](https://bluebirds-blue-jay.github.io/rest-errors/).
