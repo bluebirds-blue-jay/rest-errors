@@ -1,5 +1,5 @@
 import { RestErrors } from '../';
-import * as StatusCode from '@bluejay/status-code';
+import { StatusCode } from '@bluejay/status-code';
 
 describe('RestErrors', function () {
   describe('RestError', function () {
