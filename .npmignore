@@ -1,8 +1,5 @@
 docs/
 test/
-*.ts
-!dts/**/*.d.ts
-dts/**/*.js
 node_modules/
 tsconfig.json
 .idea/

@@ -3,7 +3,7 @@
   "scripts": {
     "test": "mocha --require ./node_modules/ts-node/register --require ./test/setup.js ./test/**/*.test.js",
     "docs": "./node_modules/.bin/typedoc --out docs --mode file --excludePrivate --excludeExternals ./src",
-    "prepare": "rm -rf dts && tsc && tsc --outDir dts -d"
+    "prepare": "tsc"
   },
   "license": "MIT",
   "version": "3.0.4",
@@ -23,7 +23,7 @@
     "url": "https://github.com/bluebirds-blue-jay/rest-errors/issues"
   },
   "homepage": "https://github.com/bluebirds-blue-jay/rest-errors#readme",
-  "typings": "./dts/index.d.ts",
+  "typings": "./index.ts",
   "dependencies": {
     "@bluejay/status-code": "^2.1.2",
     "@bluejay/utils": "^1.5.1",
