@@ -1,4 +1,4 @@
-import * as RestErrors from '../';
+import * as RestErrors from '../src';
 import { StatusCode } from '@bluejay/status-code';
 
 describe('RestErrors', function () {
