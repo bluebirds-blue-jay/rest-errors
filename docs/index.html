@@ -70,22 +70,15 @@
 					<li><code>typescript &gt;= 2.4</code></li>
 				</ul>
 				<h2 id="installation">Installation</h2>
-				<p><code>npm i @bluejay/rest-errors [--save]</code>;</p>
+				<p><code>npm i @bluejay/rest-errors</code>;</p>
 				<h2 id="usage">Usage</h2>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> RestErrors <span class="hljs-keyword">from</span> <span class="hljs-string">'@bluejay/rest-errors'</span>;
 
-<span class="hljs-keyword">new</span> RestErrors.BadRequestRestError(<span class="hljs-string">'Something went wrong.'</span>, { some: { meta: <span class="hljs-string">'data'</span> } });
+<span class="hljs-keyword">const</span> err = <span class="hljs-keyword">new</span> RestErrors.BadRequest(<span class="hljs-string">'Something went wrong.'</span>, { some: { meta: <span class="hljs-string">'data'</span> } });
+RestErrors.isRestError(err); <span class="hljs-comment">// true</span>
 </code></pre>
-				<p>Using the named exports.</p>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { RestErrors } <span class="hljs-keyword">from</span> <span class="hljs-string">'@bluejay/rest-errors'</span>;
-
-<span class="hljs-keyword">new</span> RestErrors.BadRequestRestError(<span class="hljs-string">'Something went wrong.'</span>, { some: { meta: <span class="hljs-string">'data'</span> } });
-</code></pre>
-				<p>Or directly.</p>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { BadRequestRestError } <span class="hljs-keyword">from</span> <span class="hljs-string">'@bluejay/rest-errors'</span>;
-
-<span class="hljs-keyword">new</span> BadRequestRestError(<span class="hljs-string">'Something went wrong.'</span>, { some: { meta: <span class="hljs-string">'data'</span> } });
-</code></pre>
+				<h2 id="documentation">Documentation</h2>
+				<p>See <a href="https://bluebirds-blue-jay.github.io/rest-errors/">Github Pages</a>.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -181,6 +174,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#tresterrormeta" class="tsd-kind-icon">TRest<wbr>Error<wbr>Meta</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#map" class="tsd-kind-icon">map</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#fromstatuscode" class="tsd-kind-icon">from<wbr>Status<wbr>Code</a>

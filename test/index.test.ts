@@ -1,4 +1,4 @@
-import { RestErrors } from '../';
+import * as RestErrors from '../';
 import { StatusCode } from '@bluejay/status-code';
 
 describe('RestErrors', function () {
@@ -57,7 +57,7 @@ describe('RestErrors', function () {
 
   describe('.isRestError()', function() {
     it('should return true', function () {
-      expect(RestErrors.isRestError(new RestErrors.NotFoundRestError(''))).to.equal(true);
+      expect(RestErrors.isRestError(new RestErrors.NotFound(''))).to.equal(true);
     });
 
     it('should return false', function () {

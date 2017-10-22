@@ -9,30 +9,15 @@ Rest oriented set of errors.
 
 ## Installation
 
-`npm i @bluejay/rest-errors [--save]`;
+`npm i @bluejay/rest-errors`;
 
 ## Usage
 
 ```typescript
 import * as RestErrors from '@bluejay/rest-errors';
 
-new RestErrors.BadRequestRestError('Something went wrong.', { some: { meta: 'data' } });
-```
-
-Using the named exports.
-
-```typescript
-import { RestErrors } from '@bluejay/rest-errors';
-
-new RestErrors.BadRequestRestError('Something went wrong.', { some: { meta: 'data' } });
-```
-
-Or directly.
-
-```typescript
-import { BadRequestRestError } from '@bluejay/rest-errors';
-
-new BadRequestRestError('Something went wrong.', { some: { meta: 'data' } });
+const err = new RestErrors.BadRequest('Something went wrong.', { some: { meta: 'data' } });
+RestErrors.isRestError(err); // true
 ```
 
 ## Documentation
