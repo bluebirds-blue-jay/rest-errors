@@ -1,4 +1,4 @@
-import * as StatusCode from '@bluejay/status-code';
+import { StatusCode } from '@bluejay/status-code';
 
 import { RestError } from './rest-error';
 

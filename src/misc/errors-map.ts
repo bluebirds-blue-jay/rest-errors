@@ -1,4 +1,4 @@
-import { StatusCode, TStatusCode } from '@bluejay/status-code';
+import { StatusCode } from '@bluejay/status-code';
 import * as Utils from '@bluejay/utils';
 import { RestError } from '../classes/rest-error';
 import { BadRequestRestError } from '../classes/bad-request-rest-error';
@@ -26,7 +26,7 @@ import { ServiceUnavailableRestError } from '../classes/service-unavailable-rest
 import { GatewayTimeOutRestError } from '../classes/gateway-time-out-rest-error';
 import { HTTPVersionNotSupportedRestError } from '../classes/http-version-not-supported-rest-error';
 
-export const map: Map<TStatusCode, Utils.TConstructible<RestError>> = new Map([
+export const map: Map<StatusCode, Utils.TConstructible<RestError>> = new Map<StatusCode, Utils.TConstructible<RestError>>([
   [StatusCode.BAD_REQUEST, BadRequestRestError],
   [StatusCode.UNAUTHORIZED, UnauthorizedRestError],
   [StatusCode.PAYMENT_REQUIRED, PaymentRequiredRestError],

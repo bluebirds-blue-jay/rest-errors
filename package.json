@@ -7,7 +7,7 @@
   },
   "license": "MIT",
   "version": "3.0.6",
-  "main": "index.js",
+  "main": "src/index.js",
   "description": "Errors with status codes and more.",
   "repository": {
     "type": "git",
@@ -25,13 +25,13 @@
   "homepage": "https://github.com/bluebirds-blue-jay/rest-errors#readme",
   "typings": "./dts/index.d.ts",
   "dependencies": {
-    "@bluejay/status-code": "^2.1.2",
-    "@bluejay/utils": "^1.5.1",
-    "@types/node": "^7.0.29"
+    "@bluejay/status-code": "^3.0.0",
+    "@bluejay/utils": "^1.5.1"
   },
   "devDependencies": {
     "@types/chai": "^4.0.0",
     "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.46",
     "chai": "^4.0.2",
     "mocha": "^3.4.2",
     "ts-node": "^3.3.0",

@@ -12,7 +12,7 @@
     "types": ["mocha", "node"]
   },
   "exclude": [
-    "node_modules",
-    "./src/misc/map.ts"
+    "node_modules/",
+    "dts/**/*.d.ts"
   ]
 }

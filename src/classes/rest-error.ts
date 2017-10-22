@@ -1,10 +1,10 @@
-import { TStatusCode } from '@bluejay/status-code';
+import { StatusCode } from '@bluejay/status-code';
 import { TRestErrorCode } from '../types/rest-error-code';
 import { IRestError } from '../interfaces/rest-error';
 import { TRestErrorMeta } from '../types/rest-error-meta';
 
 export abstract class RestError extends Error implements IRestError {
-  public abstract readonly statusCode: TStatusCode;
+  public abstract readonly statusCode: StatusCode;
   public readonly code: TRestErrorCode;
   public readonly meta: TRestErrorMeta;
 

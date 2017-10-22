@@ -1,14 +1,14 @@
-import { TStatusCode } from '@bluejay/status-code';
+import { StatusCode } from '@bluejay/status-code';
 import { TRestErrorMeta } from '../types/rest-error-meta';
 import { TRestErrorCode } from '../types/rest-error-code';
 
 export interface IRestError extends Error {
   meta?: TRestErrorMeta;
   code: TRestErrorCode;
-  statusCode: TStatusCode;
+  statusCode: StatusCode;
   getMeta(): TRestErrorMeta;
   getMessage(): string;
-  getStatusCode(): TStatusCode;
+  getStatusCode(): StatusCode;
   getStack(): string;
   getCode(): TRestErrorCode;
 }

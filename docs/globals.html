@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>bluejay-rest-errors</title>
+	<title>@bluejay/rest-errors</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">bluejay-rest-errors</a>
+					<a href="index.html" class="title">@bluejay/rest-errors</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -54,7 +54,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> bluejay-rest-errors</h1>
+			<h1> @bluejay/rest-errors</h1>
 		</div>
 	</div>
 </header>
@@ -132,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">TRest<wbr>Error<wbr>Code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/e19bb0d/src/types/rest-error-code.ts#L1">types/rest-error-code.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/228cf6d/src/types/rest-error-code.ts#L1">types/rest-error-code.ts:1</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -142,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">TRest<wbr>Error<wbr>Meta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/e19bb0d/src/types/rest-error-meta.ts#L1">types/rest-error-meta.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/228cf6d/src/types/rest-error-meta.ts#L1">types/rest-error-meta.ts:1</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -152,10 +152,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable">
 					<a name="map" class="tsd-anchor"></a>
 					<h3>map</h3>
-					<div class="tsd-signature tsd-kind-icon">map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TStatusCode</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Utils.TConstructible</span><span class="tsd-signature-symbol">&lt;</span><a href="classes/resterror.html" class="tsd-signature-type">RestError</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Map([[StatusCode.BAD_REQUEST, Classes.BadRequestRestError],[StatusCode.UNAUTHORIZED, Classes.UnauthorizedRestError],[StatusCode.PAYMENT_REQUIRED, Classes.PaymentRequiredRestError],[StatusCode.FORBIDDEN, Classes.ForbiddenRestError],[StatusCode.NOT_FOUND, Classes.NotFoundRestError],[StatusCode.METHOD_NOT_ALLOWED, Classes.MethodNotAllowedRestError],[StatusCode.NOT_ACCEPTABLE, Classes.NotAcceptableRestError],[StatusCode.PROXY_AUTHENTICATION_REQUIRED, Classes.ProxyAuthenticationRequiredRestError],[StatusCode.REQUEST_TIME_OUT, Classes.RequestTimeOutRestError],[StatusCode.CONFLICT, Classes.ConflictRestError],[StatusCode.GONE, Classes.GoneRestError],[StatusCode.LENGTH_REQUIRED, Classes.LengthRequiredRestError],[StatusCode.PRECONDITION_FAILED, Classes.PreconditionFailedRestError],[StatusCode.REQUEST_ENTITY_TOO_LARGE, Classes.RequestEntityTooLargeRestError],[StatusCode.REQUEST_URI_TOO_LONG, Classes.RequestUriTooLongRestError],[StatusCode.UNSUPPORTED_MEDIA_TYPE, Classes.UnsupportedMediaTypeRestError],[StatusCode.REQUEST_RANGE_UNSATISFIABLE, Classes.RequestRangeUnsatisfiableRestError],[StatusCode.EXPECTATION_FAILED, Classes.ExpectationFailedRestError],[StatusCode.INTERNAL_SERVER_ERROR, Classes.InternalServerErrorRestError],[StatusCode.NOT_IMPLEMENTED, Classes.NotImplementedRestError],[StatusCode.BAD_GATEWAY, Classes.BadGatewayRestError],[StatusCode.SERVICE_UNAVAILABLE, Classes.ServiceUnavailableRestError],[StatusCode.GATEWAY_TIME_OUT, Classes.GatewayTimeOutRestError],[StatusCode.HTTP_VERSION_NOT_SUPPORTED, Classes.HTTPVersionNotSupportedRestError]])</span></div>
+					<div class="tsd-signature tsd-kind-icon">map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">StatusCode</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Utils.TConstructible</span><span class="tsd-signature-symbol">&lt;</span><a href="classes/resterror.html" class="tsd-signature-type">RestError</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Map&lt;StatusCode, Utils.TConstructible&lt;RestError&gt;&gt;([[StatusCode.BAD_REQUEST, BadRequestRestError],[StatusCode.UNAUTHORIZED, UnauthorizedRestError],[StatusCode.PAYMENT_REQUIRED, PaymentRequiredRestError],[StatusCode.FORBIDDEN, ForbiddenRestError],[StatusCode.NOT_FOUND, NotFoundRestError],[StatusCode.METHOD_NOT_ALLOWED, MethodNotAllowedRestError],[StatusCode.NOT_ACCEPTABLE, NotAcceptableRestError],[StatusCode.PROXY_AUTHENTICATION_REQUIRED, ProxyAuthenticationRequiredRestError],[StatusCode.REQUEST_TIME_OUT, RequestTimeOutRestError],[StatusCode.CONFLICT, ConflictRestError],[StatusCode.GONE, GoneRestError],[StatusCode.LENGTH_REQUIRED, LengthRequiredRestError],[StatusCode.PRECONDITION_FAILED, PreconditionFailedRestError],[StatusCode.REQUEST_ENTITY_TOO_LARGE, RequestEntityTooLargeRestError],[StatusCode.REQUEST_URI_TOO_LONG, RequestUriTooLongRestError],[StatusCode.UNSUPPORTED_MEDIA_TYPE, UnsupportedMediaTypeRestError],[StatusCode.REQUEST_RANGE_UNSATISFIABLE, RequestRangeUnsatisfiableRestError],[StatusCode.EXPECTATION_FAILED, ExpectationFailedRestError],[StatusCode.INTERNAL_SERVER_ERROR, InternalServerErrorRestError],[StatusCode.NOT_IMPLEMENTED, NotImplementedRestError],[StatusCode.BAD_GATEWAY, BadGatewayRestError],[StatusCode.SERVICE_UNAVAILABLE, ServiceUnavailableRestError],[StatusCode.GATEWAY_TIME_OUT, GatewayTimeOutRestError],[StatusCode.HTTP_VERSION_NOT_SUPPORTED, HTTPVersionNotSupportedRestError]])</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/e19bb0d/src/misc/map.ts#L6">misc/map.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/228cf6d/src/misc/errors-map.ts#L29">misc/errors-map.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -166,19 +166,19 @@
 					<a name="fromstatuscode" class="tsd-anchor"></a>
 					<h3>from<wbr>Status<wbr>Code</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>Status<wbr>Code<span class="tsd-signature-symbol">(</span>statusCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TStatusCode</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, meta<span class="tsd-signature-symbol">?: </span><a href="globals.html#tresterrormeta" class="tsd-signature-type">TRestErrorMeta</a>, code<span class="tsd-signature-symbol">?: </span><a href="globals.html#tresterrorcode" class="tsd-signature-type">TRestErrorCode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/resterror.html" class="tsd-signature-type">RestError</a></li>
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Status<wbr>Code<span class="tsd-signature-symbol">(</span>statusCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StatusCode</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, meta<span class="tsd-signature-symbol">?: </span><a href="globals.html#tresterrormeta" class="tsd-signature-type">TRestErrorMeta</a>, code<span class="tsd-signature-symbol">?: </span><a href="globals.html#tresterrorcode" class="tsd-signature-type">TRestErrorCode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/resterror.html" class="tsd-signature-type">RestError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/e19bb0d/src/utils/from-status-code.ts#L8">utils/from-status-code.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/228cf6d/src/utils/from-status-code.ts#L8">utils/from-status-code.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>statusCode: <span class="tsd-signature-type">TStatusCode</span></h5>
+									<h5>statusCode: <span class="tsd-signature-type">StatusCode</span></h5>
 								</li>
 								<li>
 									<h5>message: <span class="tsd-signature-type">string</span></h5>
@@ -204,7 +204,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/e19bb0d/src/utils/is-rest-error.ts#L3">utils/is-rest-error.ts:3</a></li>
+									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/228cf6d/src/utils/is-rest-error.ts#L3">utils/is-rest-error.ts:3</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
