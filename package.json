@@ -23,6 +23,7 @@
     "url": "https://github.com/bluebirds-blue-jay/rest-errors/issues"
   },
   "homepage": "https://github.com/bluebirds-blue-jay/rest-errors#readme",
+  "typings": "./dts/index.d.ts",
   "dependencies": {
     "@bluejay/status-code": "^2.1.2",
     "@bluejay/utils": "^1.5.1",

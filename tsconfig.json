@@ -13,7 +13,7 @@
   },
   "exclude": [
     "node_modules",
-    "lib",
-    "./src/misc/map.ts"
+    "./src/misc/map.ts",
+    "test"
   ]
 }
