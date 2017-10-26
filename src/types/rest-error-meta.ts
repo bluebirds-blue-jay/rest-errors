@@ -1,1 +1,1 @@
-export type TRestErrorMeta = object;
+export type TRestErrorMeta = {};

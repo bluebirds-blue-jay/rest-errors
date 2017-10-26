@@ -3,15 +3,15 @@ import { TRestErrorCode } from '../types/rest-error-code';
 import { IRestError } from '../interfaces/rest-error';
 import { TRestErrorMeta } from '../types/rest-error-meta';
 
-export abstract class RestError extends Error implements IRestError {
+export abstract class RestError<M extends TRestErrorMeta = TRestErrorMeta, C extends TRestErrorCode = TRestErrorCode> extends Error implements IRestError {
   public abstract readonly statusCode: StatusCode;
-  public readonly code: TRestErrorCode;
-  public readonly meta: TRestErrorMeta;
+  public readonly code: C;
+  public readonly meta: M;
 
-  public constructor(message: string, meta: object = {}, code?: TRestErrorCode) {
+  public constructor(message: string, meta: M = {} as M, code?: C) {
     super(message);
     this.meta = meta;
-    this.code = code || this.code || this.constructor.name;
+    this.code = (code || this.code || this.constructor.name) as C;
   }
 
   public getStatusCode() {
