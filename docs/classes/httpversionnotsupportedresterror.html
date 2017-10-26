@@ -57,13 +57,24 @@
 					<a href="httpversionnotsupportedresterror.html">HTTPVersionNotSupportedRestError</a>
 				</li>
 			</ul>
-			<h1>Class HTTPVersionNotSupportedRestError</h1>
+			<h1>Class HTTPVersionNotSupportedRestError&lt;M, C&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>M<span class="tsd-signature-symbol">: </span><a href="../globals.html#tresterrormeta" class="tsd-signature-type">TRestErrorMeta</a></h4>
+					</li>
+					<li>
+						<h4>C<span class="tsd-signature-symbol">: </span><a href="../globals.html#tresterrorcode" class="tsd-signature-type">TRestErrorCode</a></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -80,7 +91,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/iresterror.html" class="tsd-signature-type">IRestError</a></li>
+					<li><a href="../interfaces/iresterror.html" class="tsd-signature-type">IRestError</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -123,14 +134,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new HTTPVersion<wbr>Not<wbr>Supported<wbr>Rest<wbr>Error<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, meta<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span>, code<span class="tsd-signature-symbol">?: </span><a href="../globals.html#tresterrorcode" class="tsd-signature-type">TRestErrorCode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="httpversionnotsupportedresterror.html" class="tsd-signature-type">HTTPVersionNotSupportedRestError</a></li>
+						<li class="tsd-signature tsd-kind-icon">new HTTPVersion<wbr>Not<wbr>Supported<wbr>Rest<wbr>Error<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, meta<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">M</span>, code<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="httpversionnotsupportedresterror.html" class="tsd-signature-type">HTTPVersionNotSupportedRestError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="resterror.html">RestError</a>.<a href="resterror.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/228cf6d/src/classes/rest-error.ts#L9">classes/rest-error.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/9ab1e1f/src/classes/rest-error.ts#L9">classes/rest-error.ts:9</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -139,10 +150,10 @@
 									<h5>message: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> meta: <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> meta: <span class="tsd-signature-type">M</span><span class="tsd-signature-symbol"> =&nbsp;{} as M</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> code: <a href="../globals.html#tresterrorcode" class="tsd-signature-type">TRestErrorCode</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> code: <a href="" class="tsd-signature-type">C</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="httpversionnotsupportedresterror.html" class="tsd-signature-type">HTTPVersionNotSupportedRestError</a></h4>
@@ -155,24 +166,24 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="code" class="tsd-anchor"></a>
 					<h3>code</h3>
-					<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <a href="../globals.html#tresterrorcode" class="tsd-signature-type">TRestErrorCode</a></div>
+					<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">C</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/iresterror.html">IRestError</a>.<a href="../interfaces/iresterror.html#code">code</a></p>
 						<p>Inherited from <a href="resterror.html">RestError</a>.<a href="resterror.html#code">code</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/228cf6d/src/classes/rest-error.ts#L8">classes/rest-error.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/9ab1e1f/src/classes/rest-error.ts#L8">classes/rest-error.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="meta" class="tsd-anchor"></a>
 					<h3>meta</h3>
-					<div class="tsd-signature tsd-kind-icon">meta<span class="tsd-signature-symbol">:</span> <a href="../globals.html#tresterrormeta" class="tsd-signature-type">TRestErrorMeta</a></div>
+					<div class="tsd-signature tsd-kind-icon">meta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">M</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/iresterror.html">IRestError</a>.<a href="../interfaces/iresterror.html#meta">meta</a></p>
 						<p>Inherited from <a href="resterror.html">RestError</a>.<a href="resterror.html#meta">meta</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/228cf6d/src/classes/rest-error.ts#L9">classes/rest-error.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/9ab1e1f/src/classes/rest-error.ts#L9">classes/rest-error.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -184,7 +195,7 @@
 						<p>Implementation of <a href="../interfaces/iresterror.html">IRestError</a>.<a href="../interfaces/iresterror.html#statuscode">statusCode</a></p>
 						<p>Overrides <a href="resterror.html">RestError</a>.<a href="resterror.html#statuscode">statusCode</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/228cf6d/src/classes/http-version-not-supported-rest-error.ts#L6">classes/http-version-not-supported-rest-error.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/9ab1e1f/src/classes/http-version-not-supported-rest-error.ts#L6">classes/http-version-not-supported-rest-error.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -229,7 +240,7 @@
 					<a name="getcode" class="tsd-anchor"></a>
 					<h3>get<wbr>Code</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Code<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Code<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">C</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -237,10 +248,10 @@
 								<p>Implementation of <a href="../interfaces/iresterror.html">IRestError</a>.<a href="../interfaces/iresterror.html#getcode">getCode</a></p>
 								<p>Inherited from <a href="resterror.html">RestError</a>.<a href="resterror.html#getcode">getCode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/228cf6d/src/classes/rest-error.ts#L33">classes/rest-error.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/9ab1e1f/src/classes/rest-error.ts#L33">classes/rest-error.ts:33</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">C</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -256,7 +267,7 @@
 								<p>Implementation of <a href="../interfaces/iresterror.html">IRestError</a>.<a href="../interfaces/iresterror.html#getmessage">getMessage</a></p>
 								<p>Inherited from <a href="resterror.html">RestError</a>.<a href="resterror.html#getmessage">getMessage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/228cf6d/src/classes/rest-error.ts#L25">classes/rest-error.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/9ab1e1f/src/classes/rest-error.ts#L25">classes/rest-error.ts:25</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -267,7 +278,7 @@
 					<a name="getmeta" class="tsd-anchor"></a>
 					<h3>get<wbr>Meta</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Meta<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Meta<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">M</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -275,10 +286,10 @@
 								<p>Implementation of <a href="../interfaces/iresterror.html">IRestError</a>.<a href="../interfaces/iresterror.html#getmeta">getMeta</a></p>
 								<p>Inherited from <a href="resterror.html">RestError</a>.<a href="resterror.html#getmeta">getMeta</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/228cf6d/src/classes/rest-error.ts#L21">classes/rest-error.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/9ab1e1f/src/classes/rest-error.ts#L21">classes/rest-error.ts:21</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">M</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -294,7 +305,7 @@
 								<p>Implementation of <a href="../interfaces/iresterror.html">IRestError</a>.<a href="../interfaces/iresterror.html#getstack">getStack</a></p>
 								<p>Inherited from <a href="resterror.html">RestError</a>.<a href="resterror.html#getstack">getStack</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/228cf6d/src/classes/rest-error.ts#L29">classes/rest-error.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/9ab1e1f/src/classes/rest-error.ts#L29">classes/rest-error.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -313,7 +324,7 @@
 								<p>Implementation of <a href="../interfaces/iresterror.html">IRestError</a>.<a href="../interfaces/iresterror.html#getstatuscode">getStatusCode</a></p>
 								<p>Inherited from <a href="resterror.html">RestError</a>.<a href="resterror.html#getstatuscode">getStatusCode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/228cf6d/src/classes/rest-error.ts#L17">classes/rest-error.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/bluebirds-blue-jay/rest-errors/blob/9ab1e1f/src/classes/rest-error.ts#L17">classes/rest-error.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">StatusCode</span></h4>
@@ -332,30 +343,30 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="badgatewayresterror.html" class="tsd-kind-icon">Bad<wbr>Gateway<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="badrequestresterror.html" class="tsd-kind-icon">Bad<wbr>Request<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="conflictresterror.html" class="tsd-kind-icon">Conflict<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="expectationfailedresterror.html" class="tsd-kind-icon">Expectation<wbr>Failed<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="forbiddenresterror.html" class="tsd-kind-icon">Forbidden<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="gatewaytimeoutresterror.html" class="tsd-kind-icon">Gateway<wbr>Time<wbr>Out<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="goneresterror.html" class="tsd-kind-icon">Gone<wbr>Rest<wbr>Error</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class">
+					<li class="current tsd-kind-class tsd-has-type-parameter">
 						<a href="httpversionnotsupportedresterror.html" class="tsd-kind-icon">HTTPVersion<wbr>Not<wbr>Supported<wbr>Rest<wbr>Error</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
@@ -398,58 +409,58 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="internalservererrorresterror.html" class="tsd-kind-icon">Internal<wbr>Server<wbr>Error<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="lengthrequiredresterror.html" class="tsd-kind-icon">Length<wbr>Required<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="methodnotallowedresterror.html" class="tsd-kind-icon">Method<wbr>Not<wbr>Allowed<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="notacceptableresterror.html" class="tsd-kind-icon">Not<wbr>Acceptable<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="notfoundresterror.html" class="tsd-kind-icon">Not<wbr>Found<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="notimplementedresterror.html" class="tsd-kind-icon">Not<wbr>Implemented<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="paymentrequiredresterror.html" class="tsd-kind-icon">Payment<wbr>Required<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="preconditionfailedresterror.html" class="tsd-kind-icon">Precondition<wbr>Failed<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="proxyauthenticationrequiredresterror.html" class="tsd-kind-icon">Proxy<wbr>Authentication<wbr>Required<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="requestentitytoolargeresterror.html" class="tsd-kind-icon">Request<wbr>Entity<wbr>Too<wbr>Large<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="requestrangeunsatisfiableresterror.html" class="tsd-kind-icon">Request<wbr>Range<wbr>Unsatisfiable<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="requesttimeoutresterror.html" class="tsd-kind-icon">Request<wbr>Time<wbr>Out<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="requesturitoolongresterror.html" class="tsd-kind-icon">Request<wbr>Uri<wbr>Too<wbr>Long<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="resterror.html" class="tsd-kind-icon">Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="serviceunavailableresterror.html" class="tsd-kind-icon">Service<wbr>Unavailable<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="unauthorizedresterror.html" class="tsd-kind-icon">Unauthorized<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-class">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="unsupportedmediatyperesterror.html" class="tsd-kind-icon">Unsupported<wbr>Media<wbr>Type<wbr>Rest<wbr>Error</a>
 					</li>
-					<li class=" tsd-kind-interface">
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="../interfaces/iresterror.html" class="tsd-kind-icon">IRest<wbr>Error</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
