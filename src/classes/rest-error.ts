@@ -6,7 +6,7 @@ import { TRestErrorMeta } from '../types/rest-error-meta';
 export abstract class RestError<M extends TRestErrorMeta = TRestErrorMeta, C extends TRestErrorCode = TRestErrorCode> extends Error implements IRestError<M, C> {
   public abstract readonly statusCode: StatusCode;
   public readonly code: C;
-  public readonly meta: M;
+  public meta: M;
 
   public constructor(message: string, meta: M = {} as M, code?: C) {
     super(message);
