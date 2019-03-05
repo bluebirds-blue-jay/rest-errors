@@ -6,7 +6,7 @@
     "prepare": "rm -rf dts && tsc && tsc --outDir dts -d"
   },
   "license": "MIT",
-  "version": "3.0.11",
+  "version": "3.0.12",
   "main": "src/index.js",
   "description": "Errors with status codes and more.",
   "repository": {
