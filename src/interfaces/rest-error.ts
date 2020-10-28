@@ -1,6 +1,6 @@
 import { StatusCode } from '@bluejay/status-code';
-import { TRestErrorMeta } from '../types/rest-error-meta';
 import { TRestErrorCode } from '../types/rest-error-code';
+import { TRestErrorMeta } from '../types/rest-error-meta';
 
 export interface IRestError<M extends TRestErrorMeta = TRestErrorMeta, C extends TRestErrorCode = TRestErrorCode> extends Error {
   meta?: TRestErrorMeta;

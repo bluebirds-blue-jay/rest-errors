@@ -1,3 +1,4 @@
+import { expect } from 'chai';
 import * as RestErrors from '../src';
 import { StatusCode } from '@bluejay/status-code';
 
