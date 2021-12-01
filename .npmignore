@@ -7,3 +7,4 @@ tsconfig.json
 *.js
 !dist/**/*.d.ts
 !dist/**/*.js
+.travis.yml

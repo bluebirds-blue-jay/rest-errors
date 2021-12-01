@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/bluebirds-blue-jay/rest-errors#readme",
   "dependencies": {
-    "@bluejay/status-code": "4.0.0-beta.2",
+    "@bluejay/status-code": "4.0.2",
     "@bluejay/utils": "4.0.0-beta.2"
   },
   "devDependencies": {
