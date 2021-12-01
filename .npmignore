@@ -8,3 +8,4 @@ tsconfig.json
 !dist/**/*.d.ts
 !dist/**/*.js
 .travis.yml
+.nyc_output/
